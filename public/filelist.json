@@ -1,3 +1,10 @@
 [
-  "index.html"
+  "auth.html",
+  "basket.html",
+  "index.html",
+  "my-card.html",
+  "product-card.html",
+  "profile.html",
+  "recommendation.html",
+  "search.html"
 ]
