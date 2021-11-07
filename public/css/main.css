@@ -7,7 +7,7 @@
 
 html,
 body {
-  font-family: "Roboto-regilar", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #252525; }
 
 ul {
@@ -107,6 +107,52 @@ img {
   .nav-breadcrumbs__text {
     color: #ee5126; }
 
+.footer {
+  padding: 40px 0;
+  margin-top: 50px;
+  background: #f7f7f7; }
+  .footer__center {
+    display: flex;
+    align-items: center;
+    margin-left: 260px;
+    padding-left: 30px; }
+  .footer__copyright {
+    flex: 0 0 auto;
+    width: 50%;
+    padding-right: 40px;
+    color: #575757; }
+  .footer__link {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; }
+  .footer__link:last-child {
+    margin-right: 0; }
+  .footer__span {
+    margin-left: 10px;
+    color: #575757; }
+  .footer__img {
+    width: 18px; }
+  .footer__img-adress {
+    width: 14px; }
+
+@media (max-width: 1199.98px) {
+  .footer__center {
+    margin-left: 0;
+    padding-left: 0; } }
+
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 30px 0; }
+    .footer__center {
+      display: block; }
+    .footer__copyright {
+      width: auto; }
+    .footer__link {
+      margin-top: 25px; } }
+
+.nowrap {
+  white-space: nowrap; }
+
 .al_left {
   justify-content: flex-start; }
 
@@ -169,7 +215,6 @@ img {
   display: block;
   padding: 12px 40px;
   font-size: 14px;
-  font-family: "Roboto-medium", sans-serif;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
@@ -217,14 +262,12 @@ img {
 
 .telephone__span {
   color: #252525;
-  font-family: "Roboto-medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px; }
 
 .adress {
   color: #252525;
-  font-family: "Roboto-medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -290,15 +333,11 @@ input:focus {
 .basket__cost {
   color: #252525;
   font-size: 20px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   white-space: nowrap; }
 
 .basket__quantity {
   color: #575757;
-  font-family: "Roboto-regular", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 16px; }
 
@@ -327,10 +366,11 @@ input:focus {
   margin-bottom: 40px; }
 
 .section__title {
-  text-transform: uppercase;
-  font-family: "Roboto-medium", sans-serif;
+  margin-bottom: 35px;
+  font-size: 32px;
   font-weight: 500;
-  font-size: 32px; }
+  line-height: 1.15625;
+  text-transform: uppercase; }
 
 .pointer {
   display: flex;
@@ -345,13 +385,12 @@ input:focus {
   margin: 0 8px; }
 
 .pointer__button {
+  transition: all 0.2s;
   padding: 17px 30px;
   background: #f7f7f7;
   border: 1px solid #e5e5e5;
   box-sizing: border-box;
   border-radius: 500px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -359,6 +398,7 @@ input:focus {
 
 .pointer__button:hover {
   background: #ee5126;
+  border-color: transparent;
   color: #fff; }
 
 .days__pointer {
@@ -372,8 +412,6 @@ input:focus {
 
 .pointer__span {
   font-size: 14px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   color: #ee5126;
   text-transform: uppercase; }
@@ -396,8 +434,6 @@ input:focus {
   margin-top: 30px;
   text-transform: uppercase;
   font-size: 26px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500; }
 
 .card__block p {
@@ -418,15 +454,11 @@ input:focus {
   margin-right: 5px; }
 
 .card__cost p:nth-child(odd) {
-  font-family: "Roboto-bold", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 50px; }
 
 .card__cost p:nth-child(2) {
   font-size: 23px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500; }
 
 .card__cost p:last-child {
@@ -501,8 +533,6 @@ input:focus {
   margin-right: 10px; }
 
 .basket-in__span {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px; }
 
@@ -569,8 +599,6 @@ input:focus {
   left: 5%;
   background: rgba(238, 81, 38, 0.88);
   padding: 14px 25px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -592,7 +620,6 @@ input:focus {
   display: block;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: "Roboto-medium", sans-serif;
   font-weight: 500;
   margin: 15px 0;
   height: 38px; }
@@ -616,15 +643,11 @@ input:focus {
   margin-right: 5px; }
 
 .old__cost p:nth-child(odd) {
-  font-family: "Roboto-bold", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px; }
 
 .old__cost p:nth-child(2) {
   font-size: 14px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500; }
 
 .old__cost p:last-child {
@@ -679,8 +702,6 @@ input:focus {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   text-align: left;
@@ -698,8 +719,6 @@ input:focus {
 .aside__link {
   padding: 20px 0 20px 35px;
   text-align: left;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px; }
 
@@ -738,37 +757,6 @@ input:focus {
   font-weight: 300;
   font-size: 16px;
   outline: none; }
-
-/* FOOTER */
-.footer {
-  padding: 40px 5.6771% 40px 21.73%;
-  background: #f7f7f7;
-  display: flex;
-  margin-top: 50px; }
-
-.copyright {
-  color: #575757;
-  margin-right: 17.5521%; }
-
-.footer__link {
-  display: flex;
-  align-items: center;
-  margin-right: 40px;
-  min-width: 164px; }
-
-.footer__link:last-child {
-  margin-right: 0;
-  flex: 1 1 auto; }
-
-.footer__span {
-  color: #575757;
-  margin-left: 2%; }
-
-.footer__img {
-  width: 18px; }
-
-.footer__img-adress {
-  width: 14px; }
 
 /* product-card */
 .product__slider-wrapper {
@@ -818,8 +806,6 @@ input:focus {
 
 .feedback__title {
   margin: 30px 0;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase; }
@@ -843,16 +829,12 @@ input:focus {
   justify-content: space-between; }
 
 .author__name {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px; }
 
 .author__date {
   color: #bcbcbc;
   font-size: 14px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   margin-top: 10px; }
 
@@ -867,8 +849,6 @@ input:focus {
 
 .product__card-category {
   font-size: 18px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
   color: #bcbcbc;
@@ -883,8 +863,6 @@ input:focus {
   margin-top: 40px; }
 
 .pc-discription__top-item {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px; }
 
@@ -912,8 +890,6 @@ input:focus {
 
 .specification__title {
   width: 100%;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   text-transform: uppercase; }
@@ -954,8 +930,6 @@ input:focus {
   width: 100%; }
 
 .feedback-form__span {
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #a6a6a6; }
@@ -988,8 +962,6 @@ input:focus {
   border-radius: 4px;
   margin-top: 5px;
   padding: 15px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   color: #a6a6a6; }
@@ -1008,8 +980,6 @@ input:focus {
   align-items: center; }
 
 .title_discription {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #bcbcbc;
@@ -1022,8 +992,6 @@ input:focus {
 
 .basket__string__title {
   margin-right: 50px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #252525; }
@@ -1065,8 +1033,6 @@ input:focus {
   padding-left: 20px; }
 
 .basket__string-product h4 {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   color: #252525; }
@@ -1074,8 +1040,6 @@ input:focus {
 .basket__string-product span {
   display: block;
   margin-top: 10px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   color: #bcbcbc; }
@@ -1089,15 +1053,11 @@ input:focus {
   margin-right: 5px; }
 
 .basket__cost p:nth-child(odd) {
-  font-family: "Roboto-bold", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px; }
 
 .basket__cost p:nth-child(2) {
   font-size: 14px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500; }
 
 .basket__cost p:last-child {
@@ -1129,8 +1089,6 @@ input:focus {
   background-size: cover; }
 
 .basket-card__span {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
@@ -1156,8 +1114,6 @@ input:focus {
   margin-left: auto; }
 
 .basket-card__title {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
@@ -1172,8 +1128,6 @@ input:focus {
   border-bottom: 1px solid #e5e5e5; }
 
 .basket-card-string span {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #252525; }
@@ -1193,15 +1147,11 @@ input:focus {
   margin-right: 5px; }
 
 .card__cost-fin p:nth-child(odd) {
-  font-family: "Roboto-bold", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 42px; }
 
 .card__cost-fin p:nth-child(2) {
   font-size: 16px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500; }
 
 .card__cost-fin p:last-child {
@@ -1242,8 +1192,6 @@ input:focus {
   margin: 0 2px; }
 
 .page-item a {
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #252525; }
@@ -1274,8 +1222,6 @@ input:focus {
   margin-top: 20px; }
 
 .auth__name {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
@@ -1286,8 +1232,6 @@ input:focus {
   border-bottom: 2px solid #ee5126; }
 
 .auth__span {
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #a6a6a6; }
@@ -1341,8 +1285,6 @@ input:focus {
 
 .profile-aside__link span {
   text-transform: uppercase;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #252525; }
@@ -1363,8 +1305,6 @@ input:focus {
   left: 50px; }
 
 .profile-form__title {
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
@@ -1383,8 +1323,6 @@ input:focus {
   margin-right: 0; }
 
 .profile-form__span {
-  font-family: "Ubuntu", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: #a6a6a6;
@@ -1521,8 +1459,6 @@ input:checked
 .my-card-right span {
   display: block;
   width: 340px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
@@ -1550,8 +1486,6 @@ input:checked
   margin-left: 5px; }
 
 .my-card-right-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   text-transform: uppercase;
@@ -1613,8 +1547,6 @@ input:checked
   left: 5%;
   background: rgba(238, 81, 38, 0.88);
   padding: 14px 25px;
-  font-family: "Roboto-medium", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #fff;
@@ -1817,11 +1749,6 @@ input:checked
   .old__cost-line {
     top: 62%;
     background-color: #575757; }
-  .footer {
-    flex-direction: column;
-    padding: 30px 15px; }
-  .footer__link {
-    margin-top: 25px; }
   .mobile-action {
     width: 100%; }
   .main-container {
@@ -1917,7 +1844,6 @@ input:checked
   .basket__string-product span {
     margin-top: 1px; }
   .basket__cost-mobile {
-    font-family: "Roboto-medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1927,8 +1853,6 @@ input:checked
   .w100 {
     width: 100%;
     display: flex; }
-  .w-t {
-    margin-top: 0; }
   .flex-box {
     display: flex;
     flex-wrap: wrap;
