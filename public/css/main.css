@@ -60,8 +60,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  color: #000; }
+  text-decoration: none; }
 
 html,
 body {
@@ -84,6 +83,43 @@ img {
   padding: 0;
   width: 100%;
   display: block; }
+
+.btn, .btn-orange, .btn-white, .btn-gray {
+  transition: all 0.2s;
+  display: inline-block;
+  padding: 1em 1.25em;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1875; }
+
+.btn-orange {
+  background: #ee5126;
+  color: #fff; }
+  .btn-orange:hover {
+    background: #f0643e; }
+
+.btn-white {
+  background: #fff;
+  border-color: #ee5126;
+  color: #ee5126; }
+  .btn-white:hover {
+    background: #ee5126;
+    border-color: transparent;
+    color: #fff; }
+
+.btn-gray {
+  border-color: #e5e5e5;
+  background: #f7f7f7;
+  color: #252525; }
+  .btn-gray:hover {
+    background: #ee5126;
+    border-color: transparent;
+    color: #fff; }
 
 .layout__center {
   width: 88.54%;
@@ -1259,40 +1295,36 @@ input:focus {
   font-size: 14px;
   color: #bcbcbc; }
 
-.card__cost-fin {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: center; }
+.basket-card__total {
+  padding: 20px 0 25px 0;
+  text-align: center; }
+  .basket-card__total__label {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.16667;
+    color: #252525; }
+  .basket-card__total__price {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16667;
+    color: #ee5126; }
+  .basket-card__total__cents {
+    vertical-align: top;
+    font-size: 0.44444em;
+    font-weight: normal; }
+  .basket-card__total__rubl {
+    font-size: 0.72222em;
+    font-weight: normal; }
 
-.card__cost-fin p {
-  color: #ee5126;
-  margin-right: 5px; }
-
-.card__cost-fin p:nth-child(odd) {
-  font-weight: 700;
-  font-size: 42px; }
-
-.card__cost-fin p:nth-child(2) {
-  font-size: 16px;
-  font-weight: 500; }
-
-.card__cost-fin p:last-child {
-  margin: 0; }
-
-.coast_a-fin {
-  margin: 0 5px; }
-
-.button-group {
-  padding: 30px;
-  display: flex;
-  flex-direction: column; }
-
-.button-group button {
-  width: 100%;
-  margin-top: 10px; }
-
-.button-group button:first-child {
-  margin: 0; }
+.basket-card__btns {
+  padding: 0 30px 30px 30px; }
+  .basket-card__btns > * {
+    margin-top: 10px;
+    width: 100%; }
+    .basket-card__btns > *:first-child {
+      margin-top: 0; }
 
 .pagination {
   display: flex;
@@ -1506,9 +1538,7 @@ input:focus {
 .profile-content-form__switch input:checked + .profile-content-form__slider {
   background-color: #ee5126; }
 
-.profile-content-form__switch
-input:checked
-+ .profile-content-form__slider:before {
+.profile-content-form__switch input:checked + .profile-content-form__slider:before {
   -webkit-transform: translateX(24px);
   transform: translateX(24px); }
 
@@ -1614,9 +1644,6 @@ input:checked
 .my-card-right-info a {
   color: #ee5126;
   cursor: pointer; }
-
-.card__cost-fin-mg {
-  margin-top: 70px; }
 
 .delete-rec {
   position: absolute;

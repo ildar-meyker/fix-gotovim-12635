@@ -1,0 +1,49 @@
+.btn {
+	transition: all 0.2s;
+	display: inline-block;
+	padding: 1em 20/16 + em;
+	border: 1px solid transparent;
+	border-radius: 100px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: (19/16);
+}
+
+.btn-orange {
+	@extend .btn;
+	background: #ee5126;
+	color: #fff;
+
+	&:hover {
+		background: lighten(#ee5126, 5%);
+	}
+}
+
+.btn-white {
+	@extend .btn;
+	background: #fff;
+	border-color: #ee5126;
+	color: #ee5126;
+
+	&:hover {
+		background: #ee5126;
+		border-color: transparent;
+		color: #fff;
+	}
+}
+
+.btn-gray {
+	@extend .btn;
+	border-color: #e5e5e5;
+	background: #f7f7f7;
+	color: #252525;
+
+	&:hover {
+		background: #ee5126;
+		border-color: transparent;
+		color: #fff;
+	}
+}

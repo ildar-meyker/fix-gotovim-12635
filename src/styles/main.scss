@@ -5,7 +5,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
-	color: #000;
 }
 
 html,
@@ -35,6 +34,7 @@ img {
 	display: block;
 }
 
+@import "./components/buttons.scss";
 @import "./components/layout.scss";
 @import "./components/layout-index.scss";
 @import "./components/layout-cart.scss";
@@ -1188,48 +1188,51 @@ input:focus {
 	color: #bcbcbc;
 }
 
-.card__cost-fin {
-	flex: 0 0 auto;
-	display: flex;
-	justify-content: center;
-}
+.basket-card {
+	&__total {
+		padding: 20px 0 25px 0;
+		text-align: center;
 
-.card__cost-fin p {
-	color: #ee5126;
-	margin-right: 5px;
-}
+		&__label {
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: (21/18);
+			color: #252525;
+		}
 
-.card__cost-fin p:nth-child(odd) {
-	font-weight: 700;
-	font-size: 42px;
-}
+		&__price {
+			margin-top: 10px;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: (42/36);
+			color: #ee5126;
+		}
 
-.card__cost-fin p:nth-child(2) {
-	font-size: 16px;
-	font-weight: 500;
-}
+		&__cents {
+			vertical-align: top;
+			font-size: 16/36 + em;
+			font-weight: normal;
+		}
 
-.card__cost-fin p:last-child {
-	margin: 0;
-}
+		&__rubl {
+			font-size: 26/36 + em;
+			font-weight: normal;
+		}
+	}
 
-.coast_a-fin {
-	margin: 0 5px;
-}
+	&__btns {
+		padding: 0 30px 30px 30px;
 
-.button-group {
-	padding: 30px;
-	display: flex;
-	flex-direction: column;
-}
+		> * {
+			margin-top: 10px;
+			width: 100%;
 
-.button-group button {
-	width: 100%;
-	margin-top: 10px;
-}
-
-.button-group button:first-child {
-	margin: 0;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
 }
 
 .pagination {
@@ -1610,10 +1613,6 @@ input:focus {
 .my-card-right-info a {
 	color: #ee5126;
 	cursor: pointer;
-}
-
-.card__cost-fin-mg {
-	margin-top: 70px;
 }
 
 .delete-rec {
