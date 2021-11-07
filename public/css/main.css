@@ -199,7 +199,7 @@ img {
   height: 42px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-right: 2%;
+  margin-right: 15px;
   padding: 10px;
   background-color: #ee5126;
   border-radius: 50%; }
@@ -267,7 +267,7 @@ input:focus {
   height: 42px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-right: 2%;
+  margin-right: 15px;
   padding: 10px;
   background-color: #ee5126;
   border-radius: 50%; }
@@ -284,7 +284,8 @@ input:focus {
   font-size: 20px;
   font-family: "Roboto-medium", sans-serif;
   font-style: normal;
-  font-weight: 500; }
+  font-weight: 500;
+  white-space: nowrap; }
 
 .basket__quantity {
   color: #575757;
@@ -1635,7 +1636,7 @@ input:checked
 .delete-rec__img {
   width: 14px; }
 
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
   .header {
     display: none; }
   .mobile-header {
