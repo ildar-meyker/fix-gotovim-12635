@@ -1,0 +1,40 @@
+.layout-try {
+	display: flex;
+
+	&__sidebar {
+		flex: 0 0 auto;
+		width: 33.33%;
+	}
+
+	&__content {
+		flex: 0 0 auto;
+		padding-right: 30px;
+		width: 66.66%;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.layout-try {
+		display: block;
+
+		&__sidebar {
+			width: 100%;
+			margin-top: 40px;
+		}
+
+		&__content {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 991.98px) {
+	.layout-try {
+		&__sidebar {
+			margin-top: 25px;
+		}
+
+		&__content {
+		}
+	}
+}

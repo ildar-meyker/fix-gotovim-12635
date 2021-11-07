@@ -1,3 +1,5 @@
+@import "./components/fonts.scss";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -37,7 +39,9 @@ img {
 @import "./components/layout-index.scss";
 @import "./components/layout-cart.scss";
 @import "./components/layout-profile.scss";
+@import "./components/layout-try.scss";
 @import "./components/nav-breadcrumbs.scss";
+@import "./components/goods-cards.scss";
 @import "./components/footer.scss";
 
 .nowrap {
@@ -92,10 +96,6 @@ img {
 	font-size: 16px;
 	margin-right: 4%;
 	color: #575757;
-}
-
-.visible {
-	display: none;
 }
 
 .header-top__profile {
@@ -267,18 +267,6 @@ input:focus {
 }
 
 /* MAIN */
-
-.recomendation__raw {
-	flex: 3 2 auto;
-	max-width: 1413px;
-}
-
-.recomendation__wrapper {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-}
 
 .main-container {
 	position: relative;
@@ -576,26 +564,6 @@ input:focus {
 
 .cotegory__pointer {
 	display: flex;
-}
-
-.favorite {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 30px;
-}
-
-.favorite__card {
-	position: relative;
-	width: 18.8959%;
-}
-
-.favorite__title {
-	display: block;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 500;
-	margin: 15px 0;
-	height: 38px;
 }
 
 .discount {
@@ -1264,10 +1232,6 @@ input:focus {
 	margin: 0;
 }
 
-.searh-favorite {
-	margin: 0;
-}
-
 .pagination {
 	display: flex;
 	justify-content: center;
@@ -1648,73 +1612,8 @@ input:focus {
 	cursor: pointer;
 }
 
-.recomendation__left-column {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.recomendation__right-column {
-	max-width: 403px;
-	width: 39.2286%;
-}
-
-.recomendation__list {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.recomendation__card {
-	margin-right: 20px;
-	width: 22.8959%;
-}
-
-.recomendation__card:nth-child(4n) {
-	margin-right: 0;
-}
-
-.recomendation__card:nth-child(n + 5) {
-	margin-top: 20px;
-}
-
-.recomendation__basket-card {
-	margin-top: 0;
-	padding-top: 15px;
-}
-
-.recomendation-card__title {
-	margin: 0;
-}
-
 .card__cost-fin-mg {
 	margin-top: 70px;
-}
-
-.recomendation__button {
-	background: #ffffff;
-	border: 1px solid #ee5126;
-	color: #ee5126;
-}
-
-.recomendation__title {
-	width: 100%;
-	margin-bottom: 30px;
-}
-
-.visible {
-	display: none;
-}
-
-.recomendation__slider-mark {
-	max-width: 53%;
-	position: absolute;
-	top: 2%;
-	left: 5%;
-	background: rgba(238, 81, 38, 0.88);
-	padding: 14px 25px;
-	font-weight: 500;
-	font-size: 16px;
-	color: #fff;
-	text-transform: uppercase;
 }
 
 .delete-rec {
@@ -1975,26 +1874,6 @@ input:focus {
 		margin-top: 0;
 	}
 
-	.hidden {
-		display: none;
-	}
-
-	.visible {
-		display: block;
-	}
-
-	.favorite {
-		flex-wrap: wrap;
-	}
-
-	.favorite__card {
-		width: 100%;
-	}
-
-	.favorite__card:nth-child(n + 2) {
-		display: none;
-	}
-
 	.card__img {
 		height: 180px;
 		object-fit: cover;
@@ -2076,10 +1955,6 @@ input:focus {
 
 	.specification__item {
 		font-size: 14px;
-	}
-
-	.mg0 {
-		margin: 0;
 	}
 
 	.category__title {
@@ -2218,10 +2093,6 @@ input:focus {
 		justify-content: space-between;
 	}
 
-	.searh-favorite {
-		margin-top: 15px;
-	}
-
 	.tx-c {
 		text-align: center;
 	}
@@ -2301,21 +2172,8 @@ input:focus {
 		width: 100%;
 	}
 
-	.recomendation__wrapper {
-		flex-direction: column;
-	}
-
-	.recomendation__card {
-		margin-right: 0;
-	}
-
 	.rel {
 		position: relative;
-	}
-
-	.recomendation__right-column {
-		width: 100%;
-		margin-top: 25px;
 	}
 
 	.pointer {
