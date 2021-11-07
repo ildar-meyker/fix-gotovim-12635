@@ -81,30 +81,31 @@ layout: default.hbs
         </div>
     </div>
 </header>
-<main class="basket__main">
-    <ul class="breadcrumps">
-        <li class="breadcrumps__item">
-            <a href="" class="breadcrumps__link">Главная</a>
-        </li>
-        <span>/</span>
-        <li class="breadcrumps__item">
-            <a href="" class="breadcrumps__link">Авторизация</a>
-        </li>
-    </ul>
-    <div class="auth__container">
-        <h1 class="section__title">Авторизация</h1>
-        <div for="" class="auth__label">
-            <span class="auth__name">Войти или создать профиль</span>
+<main>
+    
+    <div class="layout__center">
+
+        <nav class="nav-breadcrumbs">
+            <a href="#" class="nav-breadcrumbs__link">Главная</a>
+            <span class="nav-breadcrumbs__sep">/</span>
+            <span class="nav-breadcrumbs__text">Авторизация</span>
+        </nav>
+
+        <div class="auth__container">
+            <h1 class="section__title">Авторизация</h1>
+            <div for="" class="auth__label">
+                <span class="auth__name">Войти или создать профиль</span>
+            </div>
+            <label for="" class="auth__label">
+                <span class="auth__span">Номер вашего мобильного телефона: *</span>
+                <input type="text" class="auth__phone">
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" checked="checked">
+                <span class="checkbox__span">Я принимаю условия <a href="">пользовательского соглашения</a> и даю <a href="">согласие на обработку персональных данных</a></span>
+            </label>
+            <button class="pointer__button">Получить код</button>
         </div>
-        <label for="" class="auth__label">
-            <span class="auth__span">Номер вашего мобильного телефона: *</span>
-            <input type="text" class="auth__phone">
-        </label>
-        <label class="checkbox">
-            <input type="checkbox" checked="checked">
-            <span class="checkbox__span">Я принимаю условия <a href="">пользовательского соглашения</a> и даю <a href="">согласие на обработку персональных данных</a></span>
-        </label>
-        <button class="pointer__button">Получить код</button>
     </div>
 </main>
 <footer class="footer">

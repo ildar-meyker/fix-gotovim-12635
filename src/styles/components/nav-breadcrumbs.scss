@@ -1,0 +1,29 @@
+.nav-breadcrumbs {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 14px;
+	line-height: (16/14);
+
+	&--hidden {
+		opacity: 0;
+	}
+
+	&__link {
+		color: #575757;
+
+		&:hover {
+			color: lighten(#575757, 5%);
+		}
+	}
+
+	&__sep {
+		margin: 0 5px;
+		color: #575757;
+	}
+
+	&__text {
+		color: #ee5126;
+	}
+}

@@ -82,84 +82,98 @@ layout: default.hbs
     </div>
 </header>
 
-<main class="main mobile-main">
-    <div class="main__wrapper">
-        <div class="my-card__wrapper">
-            <div class="my-card__container">
-                <h1 class="section__title hidden">Карта "Снегири"</h1>
-                <ul class="my-card__list">
-                    <p class="my-card__text">Это возможность участвовать в Программах лояльности партнеров участников и получать больше скидок;</p>
-                    <li class="my-card__list__item">участвовать в акциях для владельцев карт «Снегири»</li>
-                    <li class="my-card__list__item">накапливать бонусы</li>
-                    <li class="my-card__list__item">оплачивать покупки бонусами</li>
-                    <li class="my-card__list__item">получать Персональные предложения! (скидки или бонусы)</li>
-                    <li class="my-card__list__item">получать Персональные! скидки на любимые Вами товары</li>
-                    <li class="my-card__list__item">контролировать свои покупки</li>
-                </ul>
-            </div>
-            <div class="my-card-right">
-                <div class="my-card-righ-form">
-                    <span class="">Введите номер карты Снегири для участия в акции "Цена по карте"</span>
-                    <div class="my-card-right__block">
-                        <label for="" class="my-card-right__label">
-                            <input type="text" class="my-card-right__input" placeholder="Номер карты Снегири">
-                        </label>
-                        <button class="pointer__button my-card__button">Применить карту</button>
-                        <button class="pointer__button my-card__button">У меня нет карты</button>
+<main>
+    <div class="layout__center">
+
+        <nav class="nav-breadcrumbs">
+            <a href="#" class="nav-breadcrumbs__link">Главная</a>
+            <span class="nav-breadcrumbs__sep">/</span>
+            <span class="nav-breadcrumbs__text">Корзина</span>
+        </nav>
+
+        <div class="layout-profile">
+            <div class="layout-profile__content">
+                <div class="my-card__wrapper">
+                    <div class="my-card__container">
+                        <h1 class="section__title hidden">Карта "Снегири"</h1>
+                        <ul class="my-card__list">
+                            <p class="my-card__text">Это возможность участвовать в Программах лояльности партнеров участников и получать больше скидок;</p>
+                            <li class="my-card__list__item">участвовать в акциях для владельцев карт «Снегири»</li>
+                            <li class="my-card__list__item">накапливать бонусы</li>
+                            <li class="my-card__list__item">оплачивать покупки бонусами</li>
+                            <li class="my-card__list__item">получать Персональные предложения! (скидки или бонусы)</li>
+                            <li class="my-card__list__item">получать Персональные! скидки на любимые Вами товары</li>
+                            <li class="my-card__list__item">контролировать свои покупки</li>
+                        </ul>
+                    </div>
+                    <div class="my-card-right">
+                        <div class="my-card-righ-form">
+                            <span class="">Введите номер карты Снегири для участия в акции "Цена по карте"</span>
+                            <div class="my-card-right__block">
+                                <label for="" class="my-card-right__label">
+                                    <input type="text" class="my-card-right__input" placeholder="Номер карты Снегири">
+                                </label>
+                                <button class="pointer__button my-card__button">Применить карту</button>
+                                <button class="pointer__button my-card__button">У меня нет карты</button>
+                            </div>
+                        </div>
+                        <h2 class="my-card-right-title">Уважаемый Василий,</h2>
+                        <p class="my-card-right-info">Карта лояльности <a>“Снегири” добавлена в корзину</a>. Правила использования карты вы можете найти на сайт <a>карта-снегири.рф</a></p>
                     </div>
                 </div>
-                <h2 class="my-card-right-title">Уважаемый Василий,</h2>
-                <p class="my-card-right-info">Карта лояльности <a>“Снегири” добавлена в корзину</a>. Правила использования карты вы можете найти на сайт <a>карта-снегири.рф</a></p>
+            </div>
+            <div class="layout-profile__sidebar">
+                <aside>
+                    <ul class="profile-aside__list">
+                        <li class="profile-aside__item">
+                            <a href="" class="profile-aside__link">
+                                <img src="images/profile/1.png" alt="">
+                                <span>Моя профиль</span>
+                            </a>
+                        </li>
+                        <li class="profile-aside__item">
+                            <a href="" class="profile-aside__link">
+                                <img src="images/profile/2.png" alt="">
+                                <span>Моя карта</span>
+                            </a>
+                        </li>
+                        <li class="profile-aside__item">
+                            <a href="" class="profile-aside__link">
+                                <img src="images/profile/3.png" alt="">
+                                <span>Мои адреса</span>
+                            </a>
+                        </li>
+                        <li class="profile-aside__item">
+                            <a href="" class="profile-aside__link">
+                                <img src="images/profile/4.png" alt="">
+                                <span>История заказов</span>
+                            </a>
+                        </li>
+                        <li class="profile-aside__item">
+                            <a href="" class="profile-aside__link">
+                                <img src="images/profile/5.png" alt="">
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li class="profile-aside__item">
+                            <a href="" class="profile-aside__link">
+                                <img src="images/profile/6.png" alt="">
+                                <span>Мои подписки</span>
+                            </a>
+                        </li>
+                        <li class="profile-aside__item">
+                            <a href="" class="profile-aside__link">
+                                <img src="images/profile/7.png" alt="">
+                                <span>Выйти из профиля</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
             </div>
         </div>
     </div>
-    <aside class="aside-profile">
-        <ul class="profile-aside__list">
-            <li class="profile-aside__item">
-                <a href="" class="profile-aside__link">
-                    <img src="images/profile/1.png" alt="">
-                    <span>Моя профиль</span>
-                </a>
-            </li>
-            <li class="profile-aside__item">
-                <a href="" class="profile-aside__link">
-                    <img src="images/profile/2.png" alt="">
-                    <span>Моя карта</span>
-                </a>
-            </li>
-            <li class="profile-aside__item">
-                <a href="" class="profile-aside__link">
-                    <img src="images/profile/3.png" alt="">
-                    <span>Мои адреса</span>
-                </a>
-            </li>
-            <li class="profile-aside__item">
-                <a href="" class="profile-aside__link">
-                    <img src="images/profile/4.png" alt="">
-                    <span>История заказов</span>
-                </a>
-            </li>
-            <li class="profile-aside__item">
-                <a href="" class="profile-aside__link">
-                    <img src="images/profile/5.png" alt="">
-                    <span>Избранное</span>
-                </a>
-            </li>
-            <li class="profile-aside__item">
-                <a href="" class="profile-aside__link">
-                    <img src="images/profile/6.png" alt="">
-                    <span>Мои подписки</span>
-                </a>
-            </li>
-            <li class="profile-aside__item">
-                <a href="" class="profile-aside__link">
-                    <img src="images/profile/7.png" alt="">
-                    <span>Выйти из профиля</span>
-                </a>
-            </li>
-        </ul>
-    </aside>
 </main>
+
 <footer class="footer">
     <span class="copyright">@ 2021 Название сайта. Доставка товаров на дом.</span>
     <a href="tel:+79999123341" class="footer__link">
