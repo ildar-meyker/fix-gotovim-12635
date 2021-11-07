@@ -109,6 +109,7 @@ img {
 }
 
 .header-top__button {
+	transition: all 0.2s;
 	flex: 0 0 auto;
 	display: block;
 	padding: 12px 40px;
@@ -121,6 +122,11 @@ img {
 	background: #ffffff;
 	border: 1px solid #ee5126;
 	border-radius: 500px;
+
+	&:hover {
+		background: #ee5126;
+		color: #fff;
+	}
 }
 
 .header-bottom {
@@ -131,9 +137,13 @@ img {
 	align-items: center;
 }
 
-.logo {
-	flex: 0 0 260px;
-	margin-right: 3%;
+.header-bottom__logo {
+	flex: 0 0 auto;
+	margin-right: 30px;
+
+	img {
+		width: 260px;
+	}
 }
 
 .header-bottom__link {
@@ -141,9 +151,11 @@ img {
 	display: flex;
 	align-items: center;
 	margin-right: 2%;
+	white-space: nowrap;
 }
 
 .header-bottom__img {
+	flex: 0 0 auto;
 	width: 42px;
 	height: 42px;
 	object-fit: contain;
@@ -2453,5 +2465,33 @@ input:focus {
 	.recomendation__right-column {
 		width: 100%;
 		margin-top: 25px;
+	}
+}
+
+@media (max-width: 1399.98px) {
+	.header-bottom {
+		flex-wrap: wrap;
+	}
+
+	.search {
+		flex: 0 0 auto;
+		width: 100%;
+		margin-right: 0;
+		margin-top: 20px;
+		order: 5;
+	}
+
+	.basket {
+		flex: 0 0 auto;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 1149.98px) {
+	.header-bottom {
+		&__logo {
+			width: 100%;
+			margin-bottom: 20px;
+		}
 	}
 }
