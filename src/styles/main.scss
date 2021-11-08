@@ -94,11 +94,14 @@ a {
 
 .header-top {
 	width: 100%;
-	padding: 20px 5.67%;
+	padding: 20px 0;
+	background: #f7f7f7;
+}
+
+.header-top__center {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #f7f7f7;
 }
 
 .header__nav {
@@ -160,7 +163,10 @@ a {
 
 .header-bottom {
 	width: 100%;
-	padding: 20px 5.67%;
+	padding: 20px 0;
+}
+
+.header-bottom__center {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -1664,7 +1670,7 @@ input:focus {
 }
 
 @media (max-width: 1399.98px) {
-	.header-bottom {
+	.header-bottom__center {
 		flex-wrap: wrap;
 	}
 
