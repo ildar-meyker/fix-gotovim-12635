@@ -788,37 +788,41 @@ input:focus {
   text-transform: uppercase; }
 
 .lanch__wrapper {
-  margin-top: 20px;
+  margin: 20px -15px 0 -15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   border-bottom: 1px solid #e5e5e5; }
 
 .lanch__card {
-  width: 48.935%;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  flex: 0 0 auto;
+  padding: 0 15px;
+  width: 50%; }
 
 .card__img {
   width: 100%; }
 
 .card__title {
   margin-top: 30px;
+  margin-bottom: 0.5em;
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 500; }
 
-.card__block p {
-  margin-top: 10px;
-  font-size: 20px; }
+.card__block {
+  font-size: 18px;
+  line-height: 1.5; }
 
 .card__footer {
   display: flex;
-  margin-top: 30px;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px; }
 
 .card__cost {
   flex: 2 0 auto;
-  display: flex; }
+  display: flex;
+  margin-right: 3%; }
 
 .card__cost p {
   color: #ee5126;
@@ -826,7 +830,7 @@ input:focus {
 
 .card__cost p:nth-child(odd) {
   font-weight: 700;
-  font-size: 50px; }
+  font-size: 45px; }
 
 .card__cost p:nth-child(2) {
   font-size: 23px;
@@ -1984,12 +1988,10 @@ input:focus {
     width: 100%; }
   .card__title {
     font-size: 18px; }
-  .card__block p {
+  .card__block {
     font-size: 16px; }
   .card__cost p:nth-child(odd) {
     font-size: 40px; }
-  .card__footer {
-    flex-wrap: wrap; }
   .basket-in {
     width: 100%;
     margin-top: 15px; }
