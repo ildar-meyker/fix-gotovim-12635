@@ -33,6 +33,9 @@ img {
 	width: 100%;
 	display: block;
 }
+a {
+	color: #575757;
+}
 
 @import "./components/buttons.scss";
 @import "./components/layout.scss";
@@ -41,8 +44,12 @@ img {
 @import "./components/layout-profile.scss";
 @import "./components/layout-try.scss";
 @import "./components/nav-breadcrumbs.scss";
+@import "./components/nav-tabs.scss";
+@import "./components/nav-select.scss";
+@import "./components/tabs-panes.scss";
 @import "./components/goods-cards.scss";
 @import "./components/footer.scss";
+@import "./components/page-index.scss";
 
 .nowrap {
 	white-space: nowrap;

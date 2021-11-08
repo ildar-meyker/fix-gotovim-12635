@@ -1,3 +1,5 @@
+import "./modules/NavTabs";
+
 for (let li of aside__list.querySelectorAll("#aside__item")) {
 	let span = document.createElement("span");
 	span.classList.add("show");
