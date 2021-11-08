@@ -1,4 +1,5 @@
 import "./modules/NavTabs";
+import "./modules/SliderCards";
 
 for (let li of aside__list.querySelectorAll("#aside__item")) {
 	let span = document.createElement("span");

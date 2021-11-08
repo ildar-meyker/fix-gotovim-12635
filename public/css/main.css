@@ -318,7 +318,7 @@ a {
     font-weight: 500;
     margin: 15px 0; }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .goods-cards {
     margin-top: -15px; }
     .goods-cards__image {
@@ -332,6 +332,65 @@ a {
       font-size: 14px; }
     .goods-cards__btn-delete {
       font-size: 12px; } }
+
+.slider-cards__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px; }
+
+.slider-cards__ctrl {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 40%;
+  margin-left: auto; }
+
+.slider-cards__prev, .slider-cards__next {
+  flex: 0 0 auto;
+  border-radius: 50%;
+  width: 3.46667em;
+  height: 3.46667em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background: #f7f7f7; }
+  .slider-cards__prev:hover, .slider-cards__next:hover {
+    background: #fafafa; }
+
+.slider-cards__handle {
+  flex-grow: 1;
+  padding: 0 25px; }
+
+.slider-cards__slider {
+  overflow: hidden; }
+
+.slider-cards .swiper {
+  margin: 0 -10px; }
+
+.slider-cards .swiper-slide {
+  width: 20%;
+  min-width: 250px;
+  padding: 0 10px; }
+
+.slider-cards .swiper-scrollbar {
+  height: 4px;
+  background: #f7f7f7; }
+
+.slider-cards .swiper-scrollbar-drag {
+  background: #e5e5e5; }
+
+@media (max-width: 767.98px) {
+  .slider-cards__handle {
+    display: none; }
+  .slider-cards__ctrl {
+    width: auto; }
+  .slider-cards__prev, .slider-cards__next {
+    margin-left: 10px; }
+  .slider-cards .section__title {
+    text-align: left; }
+  .slider-cards .swiper-slide {
+    width: 100%; } }
 
 .footer {
   padding: 40px 0;
@@ -394,6 +453,17 @@ a {
 .nowrap {
   white-space: nowrap; }
 
+.mb-0 {
+  margin-bottom: 0 !important; }
+
+.mt-0 {
+  margin-top: 0 !important; }
+
+.is-flipped {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  display: inline-block; }
+
 .al_left {
   justify-content: flex-start; }
 
@@ -433,6 +503,9 @@ a {
   font-size: 16px;
   margin-right: 4%;
   color: #575757; }
+
+.visible {
+  display: none; }
 
 .header-top__profile {
   flex: 1 0 auto;
@@ -1698,6 +1771,9 @@ input:focus {
   color: #ee5126;
   cursor: pointer; }
 
+.visible {
+  display: none; }
+
 .delete-rec {
   position: absolute;
   top: 2%;
@@ -1847,8 +1923,6 @@ input:focus {
   .basket-in {
     width: 100%;
     margin-top: 15px; }
-  .mobile-section__title {
-    text-align: left; }
   .scroll__line {
     display: none; }
   .arrow {
@@ -1865,6 +1939,10 @@ input:focus {
        object-fit: cover; }
   .category__slider {
     margin-top: 0; }
+  .hidden {
+    display: none; }
+  .visible {
+    display: block; }
   .card__img {
     height: 180px;
     -o-object-fit: cover;

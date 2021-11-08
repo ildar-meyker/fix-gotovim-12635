@@ -101,42 +101,68 @@ layout: default.hbs
                         </div>
                     </div>
                 </section>
-                <section class="category">
-                    <div class="category__title">
-                        <h1 class="section__title mobile-section__title">Категории товаров</h1>
-                        <div class="scroll">
-                            <a class="arrow arrow-left">
-                                <</a>
-                                    <div class="scroll__line">
-                                        <div class="scroll__line-active"></div>
+                
+                <section class="slider-cards">
+                    
+                    <div class="slider-cards__header">
+                        <div class="slider-cards__title">
+                            <div class="section__title mb-0">Категории товаров</div>
+                        </div>
+                        <div class="slider-cards__ctrl">
+                            <button type="button" class="slider-cards__prev"><i class="icon-arrow-right is-flipped"></i></button>
+                            <div class="slider-cards__handle">
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            <button type="button" class="slider-cards__next"><i class="icon-arrow-right"></i></button>
+                        </div>
+
+                    </div>
+           
+                    <div class="slider-cards__slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                {{#repeat 2}}
+                                <div class="swiper-slide">
+                                    <div class="goods-cards__item">
+                                        <div class="goods-cards__image" 
+                                            style="background-image: url(images/categories/1.png);"></div>
+                                        <div class="goods-cards__tags">
+                                            <div class="goods-cards__tags__item">Основные блюда</div>
+                                        </div>
                                     </div>
-                                    <a class="arrow arrow-right">></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="goods-cards__item">
+                                        <div class="goods-cards__image" 
+                                            style="background-image: url(images/categories/2.png);"></div>
+                                        <div class="goods-cards__tags">
+                                            <div class="goods-cards__tags__item">Фастфуд</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="goods-cards__item">
+                                        <div class="goods-cards__image" 
+                                            style="background-image: url(images/categories/3.png);"></div>
+                                        <div class="goods-cards__tags">
+                                            <div class="goods-cards__tags__item">Выпечка</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="goods-cards__item">
+                                        <div class="goods-cards__image" 
+                                            style="background-image: url(images/categories/4.png);"></div>
+                                        <div class="goods-cards__tags">
+                                            <div class="goods-cards__tags__item">Салаты</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{/repeat}}
+                            </div>
                         </div>
                     </div>
-                    <div class="category__slider">
-                        <a class="category__slider-item">
-                            <img src="images/categories/1.png" alt="" class="category__slider-img">
-                            <div class="category__slider-mark">Основные блюда</div>
-                        </a>
-                        <a class="category__slider-item">
-                            <img src="images/categories/2.png" alt="" class="category__slider-img">
-                            <div class="category__slider-mark">Салаты</div>
-                        </a>
-                        <a class="category__slider-item">
-                            <img src="images/categories/3.png" alt="" class="category__slider-img">
-                            <div class="category__slider-mark">Выпечка</div>
-                        </a>
-                        <a class="category__slider-item">
-                            <img src="images/categories/4.png" alt="" class="category__slider-img">
-                            <div class="category__slider-mark">Фастфуд</div>
-                        </a>
-                        <a class="category__slider-item">
-                            <img src="images/categories/5.png" alt="" class="category__slider-img">
-                            <div class="category__slider-mark">Напитки</div>
-                        </a>
-                    </div>
-                    
- 
+
                 </section>
 
                 <section class="page-index__section">
