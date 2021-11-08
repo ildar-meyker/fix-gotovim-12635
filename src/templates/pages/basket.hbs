@@ -16,184 +16,151 @@ layout: default.hbs
             <span class="nav-breadcrumbs__text">Корзина</span>
         </nav>
 
-        <div class="basket-page__top">
-            <h1 class="section__title">Ваша корзина</h1>
-            <span class="title_discription hidden">4 товара</span>
-        </div>
+        <h1 class="section__title">
+            <span class="">Ваша корзина</span>
+            <span class="section__title__count">4 товара</span>
+        </h1>
 
         <div class="layout-cart">
             <div class="layout-cart__content">
-                <div class="basket__table">
-                    <div class="basket__string hidden">
-                        <div class="basket__string__title">Блюдо</div>
-                        <div class="basket__string__title">Количество</div>
-                        <div class="basket__string__title">Стоимость</div>
-                        <div class="basket__string__title">Всего</div>
+                <div class="goods-edit">
+
+                    <div class="goods-edit__head">
+                        <div>Блюдо</div>
+                        <div>Количество</div>
+                        <div>Стоимость</div>
+                        <div>Всего</div>
+                        <div></div>
                     </div>
-                    <div class="basket__string">
-                        <div class="basket__string-item">
-                            <img src="images/basket-string.png" alt="" class="basket__string-img">
-                            <div class="basket__string-product">
-                                <h4>Рассольник Ленинградский 250г ЦМ</h4>
-                                <span>Основные блюда</span>
+
+                    {{#repeat 2}}
+                    <div class="goods-edit__item">
+                        <div class="goods-edit__about">
+                            <div class="goods-edit__image" style="background-image: url(images/basket-string.png);"></div>
+                            <div class="goods-edit__text">
+                                <div class="goods-edit__title">Рассольник Ленинградский 250г ЦМ</div>
+                                <div class="goods-edit__desc">Основные блюда</div>
                             </div>
                         </div>
-                        <div class="basket__string-item">
+                        <div class="goods-edit__count">
                             <div class="stepper">
                                 <label for="" class="stepper__field">
-                                        <input type="text" value="1" maxlength="2" step="1" class="stepper__input">
-                                    </label>
+                                    <input type="text" value="1" maxlength="2" step="1" class="stepper__input">
+                                </label>
                                 <div class="stepper__buttons">
                                     <button class="stepper__btn stepper__btn-minus" aria-label="Уменьшить количество">-</button>
                                     <button class="stepper__btn stepper__btn-plus" aria-label="Увеличить количество">+</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <span class="basket__cost-mobile visible">Стоимость</span>
+                        <div class="goods-edit__price">
+                            <div class="goods-edit__price__label">Стоимость</div>
                             <div class="basket__cost">
                                 <p>229</p>
                                 <p class="basket__coast_ap">90</p>
                                 <p>&#8381;</p>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <span class="basket__cost-mobile visible">Всего</span>
+                        <div class="goods-edit__total">
+                            <div class="goods-edit__price__label">Всего</div>
                             <div class="basket__cost">
                                 <p>229</p>
                                 <p class="basket__coast_ap">90</p>
                                 <p>&#8381;</p>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <a href="" class="basket__string-del">
-                                <img src="images/delete.png" alt="" class="">
-                            </a>
+                        <div class="goods-edit__delete">
+                            <button type="button" class="goods-edit__btn-delete">
+                                <i class="icon-delete"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="basket__string">
-                        <div class="basket__string-item">
-                            <img src="images/basket-string.png" alt="" class="basket__string-img">
-                            <div class="basket__string-product">
-                                <h4>Рассольник Ленинградский 250г ЦМ</h4>
-                                <span>Основные блюда</span>
+
+                    <div class="goods-edit__item">
+                        <div class="goods-edit__about">
+                            <div class="goods-edit__image" style="background-image: url(images/categories/3.png);"></div>
+                            <div class="goods-edit__text">
+                                <div class="goods-edit__title">Булочка с маком глаз. 100г тех.уп Булочка с маком глаз. 100г тех.уп</div>
+                                <div class="goods-edit__desc">Основные блюда</div>
                             </div>
                         </div>
-                        <div class="basket__string-item">
+                        <div class="goods-edit__count">
                             <div class="stepper">
                                 <label for="" class="stepper__field">
-                                        <input type="text" value="1" maxlength="2" step="1" class="stepper__input">
-                                    </label>
+                                    <input type="text" value="1" maxlength="2" step="1" class="stepper__input">
+                                </label>
                                 <div class="stepper__buttons">
                                     <button class="stepper__btn stepper__btn-minus" aria-label="Уменьшить количество">-</button>
                                     <button class="stepper__btn stepper__btn-plus" aria-label="Увеличить количество">+</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <span class="basket__cost-mobile visible">Стоимость</span>
+                        <div class="goods-edit__price">
+                            <div class="goods-edit__price__label">Стоимость</div>
                             <div class="basket__cost">
-                                <p>229</p>
-                                <p class="basket__coast_ap">90</p>
+                                <p>499</p>
+                                <p class="basket__coast_ap">00</p>
                                 <p>&#8381;</p>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <span class="basket__cost-mobile visible">Всего</span>
+                        <div class="goods-edit__total">
+                            <div class="goods-edit__price__label">Всего</div>
                             <div class="basket__cost">
-                                <p>229</p>
-                                <p class="basket__coast_ap">90</p>
+                                <p>1497</p>
+                                <p class="basket__coast_ap">00</p>
                                 <p>&#8381;</p>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <a href="" class="basket__string-del">
-                                <img src="images/delete.png" alt="" class="">
-                            </a>
+                        <div class="goods-edit__delete">
+                            <button type="button" class="goods-edit__btn-delete">
+                                <i class="icon-delete"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="basket__string">
-                        <div class="basket__string-item">
-                            <img src="images/basket-string.png" alt="" class="basket__string-img">
-                            <div class="basket__string-product">
-                                <h4>Рассольник Ленинградский 250г ЦМ</h4>
-                                <span>Основные блюда</span>
+
+                    <div class="goods-edit__item">
+                        <div class="goods-edit__about">
+                            <div class="goods-edit__image" style="background-image: url(images/categories/2.png);"></div>
+                            <div class="goods-edit__text">
+                                <div class="goods-edit__title">Винегрет овощной упак.150г</div>
+                                <div class="goods-edit__desc">Основные блюда</div>
                             </div>
                         </div>
-                        <div class="basket__string-item">
+                        <div class="goods-edit__count">
                             <div class="stepper">
                                 <label for="" class="stepper__field">
-                                        <input type="text" value="1" maxlength="2" step="1" class="stepper__input">
-                                    </label>
+                                    <input type="text" value="1" maxlength="2" step="1" class="stepper__input">
+                                </label>
                                 <div class="stepper__buttons">
                                     <button class="stepper__btn stepper__btn-minus" aria-label="Уменьшить количество">-</button>
                                     <button class="stepper__btn stepper__btn-plus" aria-label="Увеличить количество">+</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <span class="basket__cost-mobile visible">Стоимость</span>
+                        <div class="goods-edit__price">
+                            <div class="goods-edit__price__label">Стоимость</div>
                             <div class="basket__cost">
-                                <p>229</p>
-                                <p class="basket__coast_ap">90</p>
+                                <p>199</p>
+                                <p class="basket__coast_ap">80</p>
                                 <p>&#8381;</p>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <span class="basket__cost-mobile visible">Всего</span>
+                        <div class="goods-edit__total">
+                            <div class="goods-edit__price__label">Всего</div>
                             <div class="basket__cost">
-                                <p>229</p>
-                                <p class="basket__coast_ap">90</p>
+                                <p>199</p>
+                                <p class="basket__coast_ap">80</p>
                                 <p>&#8381;</p>
                             </div>
                         </div>
-                        <div class="basket__string-item">
-                            <a href="" class="basket__string-del">
-                                <img src="images/delete.png" alt="" class="">
-                            </a>
+                        <div class="goods-edit__delete">
+                            <button type="button" class="goods-edit__btn-delete">
+                                <i class="icon-delete"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="basket__string">
-                        <div class="basket__string-item">
-                            <img src="images/basket-string.png" alt="" class="basket__string-img">
-                            <div class="basket__string-product">
-                                <h4>Рассольник Ленинградский 250г ЦМ</h4>
-                                <span>Основные блюда</span>
-                            </div>
-                        </div>
-                        <div class="basket__string-item">
-                            <div class="stepper">
-                                <label for="" class="stepper__field">
-                                        <input type="text" value="1" maxlength="2" step="1" class="stepper__input">
-                                    </label>
-                                <div class="stepper__buttons">
-                                    <button class="stepper__btn stepper__btn-minus" aria-label="Уменьшить количество">-</button>
-                                    <button class="stepper__btn stepper__btn-plus" aria-label="Увеличить количество">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="basket__string-item">
-                            <span class="basket__cost-mobile visible">Стоимость</span>
-                            <div class="basket__cost">
-                                <p>229</p>
-                                <p class="basket__coast_ap">90</p>
-                                <p>&#8381;</p>
-                            </div>
-                        </div>
-                        <div class="basket__string-item">
-                            <span class="basket__cost-mobile visible">Всего</span>
-                            <div class="basket__cost">
-                                <p>229</p>
-                                <p class="basket__coast_ap">90</p>
-                                <p>&#8381;</p>
-                            </div>
-                        </div>
-                        <div class="basket__string-item">
-                            <a href="" class="basket__string-del">
-                                <img src="images/delete.png" alt="" class="">
-                            </a>
-                        </div>
-                    </div>
+                    {{/repeat}}
+
                 </div>
             </div>
             <div class="layout-cart__sidebar">
@@ -203,7 +170,7 @@ layout: default.hbs
                             <span class="basket-card__span">Введите номер карты Снегири для участия в акции "Цена по карте"</span>
                             <input type="text" class="basket-card__input" placeholder="Номер карты Снегири">
                         </label>
-                        <button class="pointer__button">Применить</button>
+                        <button type="button" class="btn-orange">Применить</button>
                     </div>
                     <h2 class="basket-card__title">Ваш заказ</h2>
                     <div class="basket-card-string">
