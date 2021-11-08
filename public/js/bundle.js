@@ -96,14 +96,15 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_NavTabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/NavTabs */ "./src/js/modules/NavTabs.js");
-/* harmony import */ var _modules_NavTabs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_NavTabs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_SliderCards__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/SliderCards */ "./src/js/modules/SliderCards.js");
-/* harmony import */ var _modules_SliderCards__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_SliderCards__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_NavSelect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/NavSelect */ "./src/js/modules/NavSelect.js");
+/* harmony import */ var _modules_SliderCards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/SliderCards */ "./src/js/modules/SliderCards.js");
+/* harmony import */ var _modules_SliderCards__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_SliderCards__WEBPACK_IMPORTED_MODULE_2__);
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 
 
@@ -157,18 +158,88 @@ $(".product__slider-nav").slick({
 
 /***/ }),
 
+/***/ "./src/js/modules/NavSelect.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/NavSelect.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _NavTabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NavTabs */ "./src/js/modules/NavTabs.js");
+
+var NavSelect = {
+  _$selects: $(),
+  _handleSelectClick: function _handleSelectClick(e) {
+    e.preventDefault();
+    $(e.currentTarget).closest(".nav-select").toggleClass("active");
+  },
+  _handleOutsideClick: function _handleOutsideClick(e) {
+    e.preventDefault();
+
+    if ($(e.target).closest(".nav-select").length === 0) {
+      console.log(1);
+
+      this._$selects.removeClass("active");
+    }
+  },
+  _handleSelectItem: function _handleSelectItem(e) {
+    e.preventDefault();
+    var $root = $(e.currentTarget).closest(".nav-select");
+    var index = $(e.currentTarget).index();
+    this.renderView($root, index);
+    this.updateTarget($root, index);
+    _NavTabs__WEBPACK_IMPORTED_MODULE_0__["default"].renderView($root.parent().parent().find(".nav-tabs"), index);
+    $root.removeClass("active");
+  },
+  renderView: function renderView($root, index) {
+    var label = $root.find(".nav-select__item").eq(index).text();
+    $root.find(".nav-select__label span").text(label);
+  },
+  updateTarget: function updateTarget($root, index) {
+    var target = $root.find(".nav-select__item").eq(index).attr("href");
+    $(target).siblings().removeClass("active").end().addClass("active");
+  },
+  init: function init() {
+    this._$selects = $(".nav-select");
+    $(document).on("click", ".nav-select__label", this._handleSelectClick.bind(this));
+    $(document).on("click", ".nav-select__item", this._handleSelectItem.bind(this));
+    $(document).on("click", this._handleOutsideClick.bind(this));
+  }
+};
+$(function () {
+  NavSelect.init();
+});
+/* harmony default export */ __webpack_exports__["default"] = (NavSelect);
+
+/***/ }),
+
 /***/ "./src/js/modules/NavTabs.js":
 /*!***********************************!*\
   !*** ./src/js/modules/NavTabs.js ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _NavSelect__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NavSelect */ "./src/js/modules/NavSelect.js");
 
 var NavTabs = {
   _handleTabClick: function _handleTabClick(e) {
     e.preventDefault();
-    $(e.currentTarget).siblings().removeClass("active").end().addClass("active");
-    var target = $(e.currentTarget).attr("href");
+    var $root = $(e.currentTarget).closest(".nav-tabs");
+    var index = $(e.currentTarget).index();
+    this.renderView($root, index);
+    this.updateTarget($root, index);
+    _NavSelect__WEBPACK_IMPORTED_MODULE_0__["default"].renderView($root.parent().parent().find(".nav-select"), index);
+  },
+  renderView: function renderView($root, index) {
+    $root.find(".nav-tabs__item").removeClass("active").eq(index).addClass("active");
+  },
+  updateTarget: function updateTarget($root, index) {
+    var target = $root.find(".nav-tabs__item").eq(index).attr("href");
     $(target).siblings().removeClass("active").end().addClass("active");
   },
   init: function init() {
@@ -178,6 +249,7 @@ var NavTabs = {
 $(function () {
   NavTabs.init();
 });
+/* harmony default export */ __webpack_exports__["default"] = (NavTabs);
 
 /***/ }),
 

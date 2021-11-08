@@ -17,8 +17,8 @@
 	&__next {
 		flex: 0 0 auto;
 		border-radius: 50%;
-		width: 52/15 + em;
-		height: 52/15 + em;
+		width: 52/16 + em;
+		height: 52/16 + em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -72,6 +72,7 @@
 		&__prev,
 		&__next {
 			margin-left: 10px;
+			font-size: 13px;
 		}
 
 		.section__title {

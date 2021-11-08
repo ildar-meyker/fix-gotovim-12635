@@ -5,16 +5,26 @@
 
 	&__promo {
 		&__tabs {
+			position: relative;
+			z-index: 100;
+			display: inline-flex;
 			margin-bottom: 35px;
 		}
 
 		&__select {
+			position: relative;
+			z-index: 100;
 			display: none;
+		}
+
+		&__slider-header {
+			margin-top: -90px;
+			margin-bottom: 35px;
 		}
 	}
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
 	.page-index {
 		&__promo {
 			&__tabs {
@@ -22,7 +32,12 @@
 			}
 
 			&__select {
-				display: block;
+				display: inline-flex;
+			}
+
+			&__slider-header {
+				margin-top: -43px;
+				margin-bottom: 25px;
 			}
 		}
 	}

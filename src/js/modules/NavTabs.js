@@ -1,14 +1,31 @@
+import NavSelect from "./NavSelect";
+
 const NavTabs = {
 	_handleTabClick(e) {
 		e.preventDefault();
 
-		$(e.currentTarget)
-			.siblings()
-			.removeClass("active")
-			.end()
-			.addClass("active");
+		const $root = $(e.currentTarget).closest(".nav-tabs");
+		const index = $(e.currentTarget).index();
 
-		const target = $(e.currentTarget).attr("href");
+		this.renderView($root, index);
+		this.updateTarget($root, index);
+
+		NavSelect.renderView(
+			$root.parent().parent().find(".nav-select"),
+			index
+		);
+	},
+
+	renderView($root, index) {
+		$root
+			.find(".nav-tabs__item")
+			.removeClass("active")
+			.eq(index)
+			.addClass("active");
+	},
+
+	updateTarget($root, index) {
+		const target = $root.find(".nav-tabs__item").eq(index).attr("href");
 		$(target).siblings().removeClass("active").end().addClass("active");
 	},
 
@@ -24,3 +41,5 @@ const NavTabs = {
 $(function () {
 	NavTabs.init();
 });
+
+export default NavTabs;
