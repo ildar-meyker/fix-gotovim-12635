@@ -10,10 +10,7 @@ const NavSelect = {
 	},
 
 	_handleOutsideClick(e) {
-		e.preventDefault();
-
 		if ($(e.target).closest(".nav-select").length === 0) {
-			console.log(1);
 			this._$selects.removeClass("active");
 		}
 	},
