@@ -788,19 +788,18 @@ a {
   margin-right: 2%;
   white-space: nowrap; }
 
-.header-bottom__img {
+.header-bottom__icon {
   flex: 0 0 auto;
   width: 42px;
   height: 42px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 15px;
-  padding: 10px;
-  background-color: #ee5126;
-  border-radius: 50%; }
-
-.header-bottom__img img {
-  width: 18px; }
+  background: #ee5126;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff; }
 
 .telephone__span {
   color: #252525;
@@ -854,19 +853,6 @@ input:focus {
   flex: 1 0 auto;
   display: flex;
   align-items: center; }
-
-.basket__icon {
-  width: 42px;
-  height: 42px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-right: 15px;
-  padding: 10px;
-  background-color: #ee5126;
-  border-radius: 50%; }
-
-.basket__icon img {
-  width: 18px; }
 
 .basket__block {
   display: flex;
