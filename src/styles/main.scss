@@ -1194,22 +1194,27 @@ input:focus {
 }
 
 .profile-aside__item {
-	padding: 20px;
 	background: #f7f7f7;
+	border-top: 1px solid #e5e5e5;
+}
+.profile-aside__item:first-child {
+	border-top: 0;
 }
 
-.profile-aside__item:last-child {
+.profile-aside__item--quit {
+	border-top: 0;
 	background-color: #fff;
 }
 
 .profile-aside__link {
 	display: flex;
 	align-items: center;
+	padding: 20px;
 }
 
-.profile-aside__link img {
-	width: 18px;
-	margin-right: 15px;
+.profile-aside__link i {
+	font-size: 20/16 + em;
+	margin-right: 13px;
 }
 
 .profile-aside__link span {
