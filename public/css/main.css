@@ -1124,9 +1124,6 @@ input:focus {
   padding-right: 55px;
   max-width: 520px; }
 
-.my-card__list {
-  margin-top: 40px; }
-
 .my-card__list__item {
   margin-top: 15px;
   display: flex;
@@ -1600,6 +1597,7 @@ input:focus {
       width: 100%; }
     .layout-profile__content {
       width: 100%;
+      margin-top: 40px;
       padding-left: 0; } }
 
 .layout-try {
@@ -2113,6 +2111,19 @@ input:focus {
   .page-profile__title-mobile {
     display: flex; } }
 
+.page-my-card__title-mobile {
+  display: none; }
+
+@media (max-width: 991.98px) {
+  .page-my-card__title-desktop {
+    display: none; }
+  .page-my-card__title-mobile {
+    display: flex; } }
+
+@media (max-width: 768.98px) {
+  .page-my-card__desc {
+    margin-top: 25px; } }
+
 .form-feedback__header {
   display: flex;
   justify-content: space-between;
@@ -2225,7 +2236,7 @@ input:focus {
 
 @media (max-width: 991.98px) {
   .form-profile {
-    margin-top: 40px !important; } }
+    margin-top: 40px; } }
 
 @media (max-width: 767.98px) {
   .form-profile {

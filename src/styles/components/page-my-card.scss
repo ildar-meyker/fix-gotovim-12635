@@ -1,0 +1,28 @@
+.page-my-card {
+	&__title-desktop {
+	}
+
+	&__title-mobile {
+		display: none;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.page-my-card {
+		&__title-desktop {
+			display: none;
+		}
+
+		&__title-mobile {
+			display: flex;
+		}
+	}
+}
+
+@media (max-width: 768.98px) {
+	.page-my-card {
+		&__desc {
+			margin-top: 25px;
+		}
+	}
+}
