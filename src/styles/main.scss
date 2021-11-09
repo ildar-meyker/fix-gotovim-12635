@@ -52,6 +52,7 @@ a {
 @import "./components/tabs-panes.scss";
 @import "./components/goods-cards.scss";
 @import "./components/goods-edit.scss";
+@import "./components/slider-reviews.scss";
 @import "./components/slider-cards.scss";
 @import "./components/footer.scss";
 @import "./components/page-index.scss";
@@ -71,13 +72,14 @@ a {
 	margin-top: 0 !important;
 }
 
+.align-left {
+	justify-content: flex-start !important;
+	text-align: left !important;
+}
+
 .is-flipped {
 	transform: rotate(180deg);
 	display: inline-block;
-}
-
-.al_left {
-	justify-content: flex-start;
 }
 
 .al_cent {
@@ -407,6 +409,18 @@ input:focus {
 	margin-top: 30px;
 }
 
+.card__footer__btn-add {
+	min-width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	i {
+		margin: -1em 0.4em -1em 0;
+		font-size: 1.5em;
+	}
+}
+
 .card__cost {
 	flex: 2 0 auto;
 	display: flex;
@@ -469,36 +483,6 @@ input:focus {
 	border: 1px solid #e5e5e5;
 	box-sizing: border-box;
 	border-radius: 0px 4px 4px 0px;
-}
-
-.basket-in {
-	background: #f7f7f7;
-	border: 1px solid #e5e5e5;
-	box-sizing: border-box;
-	border-radius: 500px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 178px;
-	height: 52px;
-}
-
-.basket-in:hover {
-	background: #ee5126;
-}
-
-.basket-in:hover .basket-in__span {
-	color: #fff;
-}
-
-.basket-in__icon {
-	width: 30px;
-	margin-right: 10px;
-}
-
-.basket-in__span {
-	font-weight: 500;
-	font-size: 16px;
 }
 
 .category {
@@ -750,7 +734,6 @@ input:focus {
 .product__slider-wrapper {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 70px;
 }
 
 .product__slider-nav {
@@ -840,6 +823,7 @@ input:focus {
 }
 
 .read-more {
+	display: inline-block;
 	font-size: 16px;
 	text-decoration: underline;
 	color: #ee5126;
@@ -955,15 +939,6 @@ input:focus {
 .feedback-form__input:focus {
 	outline: none;
 	color: #000;
-}
-
-.feedback-form__smiles-block {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.feedback-form__smiles-block img {
-	width: 58px;
 }
 
 .feedback-form__textarea {
@@ -1685,7 +1660,7 @@ input:focus {
 	}
 
 	.section__title {
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 		display: flex;
 		justify-content: center;
 		text-align: center;
@@ -1704,13 +1679,13 @@ input:focus {
 		font-size: 16px;
 	}
 
-	.card__cost p:nth-child(odd) {
+	.card__cost {
 		font-size: 40px;
 	}
 
-	.basket-in {
-		width: 100%;
+	.card__footer__btn-add {
 		margin-top: 15px;
+		width: 100%;
 	}
 
 	.scroll__line {
@@ -1775,10 +1750,6 @@ input:focus {
 
 	.mobile-action {
 		width: 100%;
-	}
-
-	.product__slider-wrapper {
-		margin-bottom: 20px;
 	}
 
 	.pc-mb-ttl {
