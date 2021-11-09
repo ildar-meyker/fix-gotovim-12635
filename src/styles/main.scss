@@ -38,6 +38,7 @@ a {
 	color: #575757;
 }
 
+@import "./components/fix-vendor.scss";
 @import "./components/buttons.scss";
 @import "./components/price.scss";
 @import "./components/layout.scss";
@@ -54,6 +55,9 @@ a {
 @import "./components/slider-cards.scss";
 @import "./components/footer.scss";
 @import "./components/page-index.scss";
+@import "./components/page-product.scss";
+
+@import "./components/form-feedback.scss";
 
 .nowrap {
 	white-space: nowrap;
@@ -284,12 +288,6 @@ input:focus {
 }
 
 /* MAIN */
-
-.main-container {
-	position: relative;
-	width: 100%;
-	display: flex;
-}
 
 .lanch {
 	width: 100%;
@@ -755,10 +753,6 @@ input:focus {
 	margin-bottom: 70px;
 }
 
-.product-card__left-column {
-	width: 57.7058%;
-}
-
 .product__slider-nav {
 	width: 24.3629%;
 }
@@ -798,8 +792,6 @@ input:focus {
 	padding: 5.1%;
 	background: #ffffff;
 	border: 1px solid #e5e5e5;
-	margin-top: 30px;
-	margin-bottom: 50px;
 }
 
 .feedback__logo {
@@ -851,11 +843,6 @@ input:focus {
 	font-size: 16px;
 	text-decoration: underline;
 	color: #ee5126;
-}
-
-.product-card__right-column {
-	margin-left: 1.8%;
-	max-width: 691px;
 }
 
 .product__card-category {
@@ -928,14 +915,6 @@ input:focus {
 	margin-top: 20px;
 }
 
-.feedback-form__top {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 140px;
-	margin-bottom: 40px;
-}
-
 .feedback-form__block {
 	display: flex;
 	flex-wrap: wrap;
@@ -1003,12 +982,6 @@ input:focus {
 .feedback-form__textarea:focus {
 	outline: none;
 	color: #000;
-}
-
-.feedback-form button {
-	margin-top: 20px;
-	margin-left: 69%;
-	width: 220px;
 }
 
 .basket-card {
@@ -1804,10 +1777,6 @@ input:focus {
 		width: 100%;
 	}
 
-	.main-container {
-		flex-direction: column;
-	}
-
 	.product__slider-wrapper {
 		margin-bottom: 20px;
 	}
@@ -1875,12 +1844,6 @@ input:focus {
 		margin-top: 15px;
 	}
 
-	.feedback-form__top {
-		margin-top: 0;
-		display: flex;
-		flex-direction: column;
-	}
-
 	.feedback-form__label {
 		width: 100%;
 	}
@@ -1891,11 +1854,6 @@ input:focus {
 
 	.feedback-form__smiles {
 		margin-top: 25px;
-	}
-
-	.feedback-form button {
-		margin-left: 0;
-		width: 100%;
 	}
 
 	.stepper-right {
