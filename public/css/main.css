@@ -445,6 +445,31 @@ input:focus {
   box-sizing: border-box;
   border-radius: 0px 4px 4px 0px; }
 
+.basket-in {
+  background: #f7f7f7;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 178px;
+  height: 52px; }
+
+.basket-in:hover {
+  background: #ee5126; }
+
+.basket-in:hover .basket-in__span {
+  color: #fff; }
+
+.basket-in__icon {
+  width: 30px;
+  margin-right: 10px; }
+
+.basket-in__span {
+  font-weight: 500;
+  font-size: 16px; }
+
 .category {
   width: 100%; }
 
@@ -1320,6 +1345,9 @@ input:focus {
     font-size: 16px; }
   .card__cost {
     font-size: 40px; }
+  .basket-in {
+    margin-top: 15px;
+    width: 100%; }
   .card__footer__btn-add {
     margin-top: 15px;
     width: 100%; }
@@ -2164,11 +2192,9 @@ input:focus {
     margin-right: -10px;
     margin-left: -10px;
     font-size: 16px; }
-    .form-profile__notify:nth-child(1) {
-      margin-top: 20px; }
-      .form-profile__notify:nth-child(1) .form-profile__notify__type {
-        display: block;
-        margin-top: -1.5em; }
+    .form-profile__notify:nth-child(1) .form-profile__notify__type {
+      display: block;
+      margin-top: -1.5em; }
     .form-profile__notify__label {
       flex: 0 0 auto;
       width: 33.33%;
@@ -2219,6 +2245,8 @@ input:focus {
     .form-profile__notify {
       flex-wrap: wrap;
       font-size: 14px; }
+      .form-profile__notify:nth-child(1) {
+        margin-top: 20px; }
       .form-profile__notify__label {
         margin-bottom: 10px;
         width: 100%; }
