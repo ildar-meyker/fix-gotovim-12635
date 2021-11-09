@@ -1,0 +1,15 @@
+.input-default {
+	transition: all 0.2s;
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	background: #fff;
+	padding: 13/14 + em 15/14 + em;
+	font-size: 14px;
+	color: #252525 !important;
+
+	&:focus {
+		border-color: darken(#e5e5e5, 15%);
+		outline: none;
+	}
+}

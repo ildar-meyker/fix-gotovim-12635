@@ -38,28 +38,6 @@ a {
 	color: #575757;
 }
 
-@import "./components/fix-vendor.scss";
-@import "./components/buttons.scss";
-@import "./components/price.scss";
-@import "./components/layout.scss";
-@import "./components/layout-index.scss";
-@import "./components/layout-cart.scss";
-@import "./components/layout-profile.scss";
-@import "./components/layout-try.scss";
-@import "./components/nav-breadcrumbs.scss";
-@import "./components/nav-tabs.scss";
-@import "./components/nav-select.scss";
-@import "./components/tabs-panes.scss";
-@import "./components/goods-cards.scss";
-@import "./components/goods-edit.scss";
-@import "./components/slider-reviews.scss";
-@import "./components/slider-cards.scss";
-@import "./components/footer.scss";
-@import "./components/page-index.scss";
-@import "./components/page-product.scss";
-
-@import "./components/form-feedback.scss";
-
 .nowrap {
 	white-space: nowrap;
 }
@@ -1211,114 +1189,11 @@ input:focus {
 	color: #252525;
 }
 
-.profile-form {
-	position: relative;
-	background: #f7f7f7;
-	padding: 50px 115px;
-	margin-top: 25px;
-}
-
-.profile-form:first-child {
-	margin-top: 0;
-}
-
-.profile-form__icon {
-	position: absolute;
-	width: 17px;
-	top: 50px;
-	left: 50px;
-}
-
-.profile-form__title {
-	font-weight: 500;
-	font-size: 20px;
-	text-transform: uppercase;
-	color: #ee5126;
-}
-
-.profile-form__string {
-	display: flex;
-}
-
-.profile-form___label {
-	margin-top: 25px;
-	display: flex;
-	flex-direction: column;
-	margin-right: 20px;
-}
-
-.profile-form___label:last-child {
-	margin-right: 0;
-}
-
-.profile-form__span {
-	font-weight: normal;
-	font-size: 16px;
-	color: #a6a6a6;
-	margin-bottom: 5px;
-}
-
-.profile-form__input {
-	width: 250px;
-	height: 42px;
-	background: #ffffff;
-	border: 1px solid #e5e5e5;
-	border-radius: 4px;
-	text-indent: 15px;
-}
-
-.profile-form__input:focus {
-	border: none;
-	outline: none;
-	border: 1px solid #e5e5e5;
-	border-radius: 4px;
-	padding: 0 15px;
-}
-
-.profile__button {
-	margin-top: 25px;
-	background: #ee5126;
-	color: #fff;
-}
-
-.profile-checkbox__string {
-	align-items: flex-end;
-}
-
-.profile-form__string-span {
-	width: 342px;
-}
-
-.profile-form__string-span a {
-	color: #ee5126;
-}
-
-.radio {
-	display: flex;
-}
-
-.radio-2 {
-	display: flex;
-}
-
-.radio-block {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-left: 70px;
-}
-
-.radio-block span {
-	text-align: center;
-}
-
 .profile-content-form__switch {
 	position: relative;
 	display: inline-block;
 	width: 50px;
 	height: 24px;
-
-	margin-top: 15px;
 }
 .profile-content-form__switch input {
 	opacity: 0;
@@ -1850,47 +1725,8 @@ input:focus {
 		text-align: center;
 	}
 
-	.profile-form {
-		padding: 20px;
-	}
-
-	.profile-form__icon {
-		position: static;
-	}
-
-	.profile-form__string {
-		flex-direction: column;
-	}
-
-	.profile-form___label {
-		margin-right: 0;
-	}
-
-	.profile-form__input {
-		width: 100%;
-	}
-
 	.jcl {
 		justify-content: flex-start;
-	}
-
-	.profile-form__title {
-		margin-left: 10px;
-	}
-
-	.profile-form__string-span {
-		width: 100%;
-		margin-top: 25px;
-	}
-
-	.radio {
-		width: 100%;
-		margin-top: 15px;
-		display: flex;
-	}
-
-	.radio-block {
-		margin-left: 25px;
 	}
 
 	.hd {
@@ -1946,3 +1782,28 @@ input:focus {
 		}
 	}
 }
+
+@import "./components/fix-vendor.scss";
+@import "./components/buttons.scss";
+@import "./components/inputs.scss";
+@import "./components/price.scss";
+@import "./components/layout.scss";
+@import "./components/layout-index.scss";
+@import "./components/layout-cart.scss";
+@import "./components/layout-profile.scss";
+@import "./components/layout-try.scss";
+@import "./components/nav-breadcrumbs.scss";
+@import "./components/nav-tabs.scss";
+@import "./components/nav-select.scss";
+@import "./components/tabs-panes.scss";
+@import "./components/goods-cards.scss";
+@import "./components/goods-edit.scss";
+@import "./components/slider-reviews.scss";
+@import "./components/slider-cards.scss";
+@import "./components/footer.scss";
+@import "./components/page-index.scss";
+@import "./components/page-product.scss";
+@import "./components/page-profile.scss";
+
+@import "./components/form-feedback.scss";
+@import "./components/form-profile.scss";
