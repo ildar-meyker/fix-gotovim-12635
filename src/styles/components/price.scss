@@ -1,0 +1,16 @@
+.price {
+	font-weight: 700;
+
+	> span {
+		&:nth-child(2) {
+			margin: 0 -0.2em;
+			vertical-align: top;
+			font-size: 0.5em;
+			font-weight: normal;
+		}
+
+		&:nth-child(3) {
+			font-weight: normal;
+		}
+	}
+}

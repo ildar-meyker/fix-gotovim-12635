@@ -39,6 +39,7 @@ a {
 }
 
 @import "./components/buttons.scss";
+@import "./components/price.scss";
 @import "./components/layout.scss";
 @import "./components/layout-index.scss";
 @import "./components/layout-cart.scss";
@@ -287,9 +288,7 @@ input:focus {
 }
 
 .basket__cost {
-	color: #252525;
 	font-size: 20px;
-	font-weight: 500;
 	white-space: nowrap;
 }
 
@@ -425,31 +424,15 @@ input:focus {
 	flex: 2 0 auto;
 	display: flex;
 	margin-right: 3%;
-}
-
-.card__cost p {
-	color: #ee5126;
-	margin-right: 5px;
-}
-
-.card__cost p:nth-child(odd) {
-	font-weight: 700;
 	font-size: 45px;
-}
-
-.card__cost p:nth-child(2) {
-	font-size: 23px;
-	font-weight: 500;
-}
-
-.card__cost p:last-child {
-	margin: 0;
+	color: #ee5126;
 }
 
 .stepper {
 	position: relative;
 	margin-right: 3%;
-	width: 120px;
+	width: 120/16 + em;
+	font-size: 16px;
 }
 
 .stepper__field {
@@ -458,25 +441,27 @@ input:focus {
 }
 
 .stepper__input {
-	width: 50px;
-	height: 52px;
+	width: 50/16 + em;
+	height: 52/16 + em;
 	outline: none;
 	border: none;
 	background: #f7f7f7;
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 	text-align: center;
+	font-size: 1em;
 }
 
 .stepper__btn {
 	position: absolute;
 	top: 0;
+	font-size: 1em;
 }
 
 .stepper__btn-minus {
 	left: 0;
-	width: 36px;
-	height: 52px;
+	width: 36/16 + em;
+	height: 52/16 + em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -488,8 +473,8 @@ input:focus {
 
 .stepper__btn-plus {
 	right: 0;
-	width: 36px;
-	height: 52px;
+	width: 36/16 + em;
+	height: 52/16 + em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -620,7 +605,7 @@ input:focus {
 	display: flex;
 }
 
-.cost__block > .card__cost p:nth-child(odd) {
+.cost__block > .card__cost {
 	font-size: 36px;
 }
 
@@ -1037,34 +1022,6 @@ input:focus {
 	width: 220px;
 }
 
-.basket__cost {
-	flex: 0 0 auto;
-	display: flex;
-}
-
-.basket__cost p {
-	color: #252525;
-	margin-right: 5px;
-}
-
-.basket__cost p:nth-child(odd) {
-	font-weight: 700;
-	font-size: 20px;
-}
-
-.basket__cost p:nth-child(2) {
-	font-size: 14px;
-	font-weight: 500;
-}
-
-.basket__cost p:last-child {
-	margin: 0;
-}
-
-.basket__coast_ap {
-	margin: 0 5px;
-}
-
 .basket-card {
 	background: #ffffff;
 	box-shadow: 0px 0px 15px rgba(116, 116, 116, 0.2);
@@ -1136,9 +1093,7 @@ input:focus {
 }
 
 .basket-card-string span {
-	font-weight: normal;
 	font-size: 16px;
-	color: #252525;
 }
 
 .basket-card-discription {
@@ -1166,17 +1121,6 @@ input:focus {
 			font-weight: 700;
 			line-height: (42/36);
 			color: #ee5126;
-		}
-
-		&__cents {
-			vertical-align: top;
-			font-size: 16/36 + em;
-			font-weight: normal;
-		}
-
-		&__rubl {
-			font-size: 26/36 + em;
-			font-weight: normal;
 		}
 	}
 
@@ -1539,7 +1483,13 @@ input:focus {
 .my-card-right__block {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	margin-top: 15px;
+
+	> * {
+		margin-right: 5px;
+		margin-top: 10px;
+	}
 }
 
 .my-card-right__input {
@@ -1558,7 +1508,6 @@ input:focus {
 
 .my-card__button {
 	font-size: 14px;
-	margin-left: 5px;
 }
 
 .my-card-right-title {
@@ -1857,17 +1806,8 @@ input:focus {
 		padding-top: 15px;
 	}
 
-	.old__cost p:nth-child(odd) {
-		color: #575757;
-	}
-
-	.old__cost p:nth-child(2) {
-		color: #575757;
-	}
-
 	.old__cost-line {
 		top: 62%;
-		background-color: #575757;
 	}
 
 	.mobile-action {
@@ -1970,13 +1910,6 @@ input:focus {
 
 	.stepper-right {
 		margin-left: auto;
-	}
-
-	.basket__cost-mobile {
-		font-style: normal;
-		font-weight: 500;
-		font-size: 14px;
-		color: #252525;
 	}
 
 	.w-m {

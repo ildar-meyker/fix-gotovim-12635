@@ -168,15 +168,22 @@
 @media (max-width: 767.98px) {
 	.goods-edit {
 		&__about {
-			padding-right: 50px;
+			padding-right: 30px;
 		}
 
 		&__count {
-			width: 120px;
+			width: auto;
+			padding-right: 15px;
 		}
 
 		&__price {
 			width: auto;
+
+			padding-right: 15px;
+
+			&__label {
+				font-size: 14px;
+			}
 		}
 
 		&__total {
@@ -201,12 +208,6 @@
 			font-size: 12px;
 		}
 
-		&__price {
-			&__label {
-				font-size: 14px;
-			}
-		}
-
 		&__delete {
 			padding-right: 0;
 			width: auto;
@@ -216,8 +217,12 @@
 			font-size: 7px;
 		}
 
-		.basket__cost p {
-			font-size: 16px !important;
+		.basket__cost {
+			font-size: 16px;
+		}
+
+		.stepper {
+			font-size: 12px;
 		}
 	}
 }
