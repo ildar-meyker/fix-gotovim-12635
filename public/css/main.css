@@ -889,6 +889,8 @@ input:focus {
   font-size: 32px;
   line-height: 1.15625;
   font-weight: 500; }
+  .section__title--center {
+    justify-content: center; }
   .section__title__count {
     padding-left: 1.5625em;
     font-size: 0.5em;
@@ -1610,10 +1612,11 @@ input:focus {
 
 .auth__label {
   display: flex;
-  flex-direction: column;
-  margin-top: 20px; }
+  flex-direction: column; }
 
 .auth__name {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;

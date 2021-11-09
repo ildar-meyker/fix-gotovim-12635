@@ -309,6 +309,10 @@ input:focus {
 	line-height: (37/32);
 	font-weight: 500;
 
+	&--center {
+		justify-content: center;
+	}
+
 	&__count {
 		padding-left: 25/16 + em;
 		font-size: 16/32 + em;
@@ -1175,10 +1179,11 @@ input:focus {
 .auth__label {
 	display: flex;
 	flex-direction: column;
-	margin-top: 20px;
 }
 
 .auth__name {
+	display: block;
+	margin-bottom: 20px;
 	font-weight: 500;
 	font-size: 20px;
 	text-transform: uppercase;

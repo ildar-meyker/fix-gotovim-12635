@@ -18,19 +18,21 @@ layout: default.hbs
         </nav>
 
         <div class="auth__container">
-            <h1 class="section__title">Авторизация</h1>
-            <div for="" class="auth__label">
-                <span class="auth__name">Войти или создать профиль</span>
-            </div>
-            <label for="" class="auth__label">
+            <h1 class="section__title section__title--center">Авторизация</h1>
+            
+            <div class="auth__name">Войти или создать профиль</div>
+            
+            <label class="auth__label">
                 <span class="auth__span">Номер вашего мобильного телефона: *</span>
                 <input type="text" class="auth__phone">
             </label>
+            
             <label class="checkbox">
                 <input type="checkbox" checked="checked">
                 <span class="checkbox__span">Я принимаю условия <a href="">пользовательского соглашения</a> и даю <a href="">согласие на обработку персональных данных</a></span>
             </label>
-            <button class="pointer__button">Получить код</button>
+
+            <button type="button" class="pointer__button">Получить код</button>
         </div>
     </div>
 </main>
